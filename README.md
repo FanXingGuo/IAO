@@ -26,7 +26,7 @@ sudo ./IAO
 
 运行时截图
 
-![截屏2022-01-26 19.35.21](http://cdn.51dream.top/blog/截屏2022-01-26 19.35.21.png)
+![20220126](http://cdn.51dream.top/blog/20220126.png)
 
 #### 使用
 
