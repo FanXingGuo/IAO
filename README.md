@@ -12,9 +12,11 @@ Mac 与iPad之间可以共享剪切板，用起来非常方便，但是这个功
 
 #### 安装
 
-点击，选择合适的平台，下载、解压： https://github.com/FanXingGuo/IAO/releases/tag/v1.0
+点击 https://github.com/FanXingGuo/IAO/releases/tag/v1.0 （或者本页面 右栏 Releases）
 
 备用地址：链接: https://pan.baidu.com/s/1w_mXzFfHSTmuFkIzpAj9bQ  密码: glt9
+
+选择适合的平台，下载、解压：
 
 **Windows：**双击运行，如果提示网络访问，点击允许
 
