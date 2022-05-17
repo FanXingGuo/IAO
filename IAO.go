@@ -5,7 +5,8 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"encoding/base64"
-	"golang.design/x/clipboard"
+	//"golang.design/x/clipboard"
+	"github.com/atotto/clipboard"
 	"log"
 	"net"
 	"path"
@@ -102,10 +103,10 @@ func sender(){
 		panic(err)
 	}
 	defer conn.Close()
-	contentA:=string(clipboard.Read(clipboard.FmtText))
+	contentA,_:=clipboard.ReadAll()
 
 	for range time.Tick(500*time.Millisecond){
-		content:=string(clipboard.Read(clipboard.FmtText))
+		content,_:=clipboard.ReadAll()
 		if content!=contentA{
 			//log.Println(content)
 			s:=EnCode(content)
@@ -127,7 +128,7 @@ func receiver(){
 	defer udpConn.Close()
 
 	buf:=make([]byte,32768)
-	contentA:=string(clipboard.Read(clipboard.FmtText))
+	contentA,_:=clipboard.ReadAll()
 	for{
 		n,cltAddr,err:=udpConn.ReadFromUDP(buf)
 		if err!=nil{
@@ -137,7 +138,7 @@ func receiver(){
 		contentNow,isok:=DeCode(data)
 		if isok{
 			if contentNow!=contentA{
-				clipboard.Write(clipboard.FmtText, []byte(contentNow))
+				clipboard.WriteAll(contentNow)
 				//clipboard.WriteAll(string(buf[:n]))
 				log.Println(cltAddr,contentNow)
 				contentA=contentNow
