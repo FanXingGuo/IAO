@@ -25,7 +25,9 @@ Mac 与iPad之间可以共享剪切板，用起来非常方便，但是这个功
 ##### **Linux、Mac平台：**
 
 双击运行或者使用命令行，如果共享时没有反应，请添加管理员 权限：
+
 linux: requires 'xclip' or 'xsel' command to be installed
+
 
 ```bash
 sudo ./IAO
@@ -50,6 +52,7 @@ sudo ./IAO
 区分局域网不同用户使用，默认相同文件名的传递有效，Windows 平台不包括后缀名，如程序 IAO.exe 剪贴板内容会传递给Linux或Mac下的 “IAO”（Mac、Linux 可执行文件 无后缀名），Linux：程序名为zhangsan会共享给 Windows平台下zhangsan.exe，lisi.exe、lisi 则不会共享 
 
 **关于异常：panic: listen udp 0.0.0.0:9999: bind: address already in use**
+
 报错显示端口已被占有。IAO 使用的是9999端口，如果其他程序占用该端口，请先关闭占用的程序。或者有可能，IAO打开了两次，第二次打开报错端口被占用
 
 
