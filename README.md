@@ -16,13 +16,13 @@ Mac 与iPad之间可以共享剪切板，用起来非常方便，但是这个功
 
 备用地址：链接: https://pan.baidu.com/s/1w_mXzFfHSTmuFkIzpAj9bQ  密码: glt9
 
-选择适合的平台，下载、解压：
+选择对应的平台版本，下载、解压：
 
-##### Windows平台：
+##### Windows平台（amd64）：
 
 双击运行，如果提示请求网络访问，点击允许
 
-##### **Linux、Mac平台：**
+##### **Linux(amd64、arm、arm64)、Mac平台（amd64）：**
 
 双击运行或者使用命令行，如果共享时没有反应，请添加管理员 权限：
 
